@@ -1,20 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Pepsi website</title>
 
     <!-- STYLESHEEET CSS LINK  -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    
 
+<body>
+
+    <section class="sec">
+        <header>
+            <a href="./index.html">
+                <img class="site-logo-img" src="./images/pepsi-logo.png" alt="pepsi-logo" width="80" height="80">
+            </a>
+
+            <ul class="site-header-list">
+                <li class="site-header-item">
+                    <a class="site-header-link" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="site-header-item">
+                    <a class="site-header-link" href="#">
+                        Products
+                    </a>
+                </li>
+                <li class="site-header-item">
+                    <a class="site-header-link" href="#">
+                        What's New
+                    </a>
+                </li>
+                <li class="site-header-item">
+                    <a class="site-header-link" href="#">
+                        Newsletter
+                    </a>
+                </li>
+                <li class="site-header-item">
+                    <a class="site-header-link" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="textBox">
+                <h2 class="textBox-heading">That's What <br> <span>i like</span></h2>
+                <p class="textBox-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio veniam, temporibus sed ducimus minus quos, mollitia dicta illum delectus doloremque possimus facilis eius quidem consectetur rerum autem neque rem.</p>
+                <a class="textBox-link" href="#"> View All Products</a>
+            </div>
+
+            <div class="imgBox">
+                <img class="pepsi" src="./images/pepsi-blue.png" alt="pepsi image" width="260" height="514">
+            </div>
+        </div>
+
+        <ul class="thumb-list">
+            <li class="thumb-item">
+                <img class="thumb-img" src="pepsi-blue.png" onclick="imgSlider('pepsi-blue.png'); changeBgColor(`#0062be`)" alt="pepsi">
+            </li>
+            <li class="thumb-item">
+                <img class="thumb-img" src="pepsi-grey.png" onclick="imgSlider('pepsi-grey.png'); changeBgColor(`#e60c2c`)" alt="pepsi">
+            </li>
+            <li class="thumb-item">
+                <img class="thumb-img" src="pepsi-black.png" onclick="imgSlider('pepsi-black.png'); changeBgColor(`#1e1e1e`)" alt="pepsi">
+            </li>
+        </ul>
+
+        <ul class="socials-list">
+            <li class="socials-item">
+                <a class="socials-item-link" href="#">
+                    <img class="socials-img" src="./images/facebook.png" alt="facebook logo">
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-item-link" href="#">
+                    <img class="socials-img" src="./images/twitter.png" alt="twitter logo">
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-item-link" href="#">
+                    <img class="socials-img" src="./images/instagram.png" alt="instagram logo">
+                </a>
+            </li>
+        </ul>
+
+    </section>
 
     <!-- JAVA SCRIPT LINK  -->
     <script src="./JS/main.js"></script>
 </body>
+
 </html>

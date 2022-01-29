@@ -1,3 +1,8 @@
+/* GLOBAL IMPORT FONT FAMILY LINK START  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+
+
 /* CUSTOM PROPS CSS START  */
 :root {
     --primary-color: #000;
@@ -35,7 +40,7 @@ body {
     background-color: var(--text-color);
     padding: 0;
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: 'Poppins',"Arial", sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -45,17 +50,163 @@ img {
     height: auto;
 }
 
-/* CONTAINER CSS START  */
-.container {
-     width: 100%;
-     max-width: 1200px;
-     margin-left: auto;
-     margin-right: auto;
-     padding-left: 50px;
-     padding-right: 50px;
-}
 
 /* SAIT MAIN CSS START  */
 .site-main {
     flex-grow: 1;
+}
+
+/* PEPSI WEBSITE STYLES START  */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0062be;
+    transition: 0.5s ease;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.site-logo-img {
+    position: relative;
+    max-width: 80px;
+    display: flex;
+    object-fit: contain;
+}
+
+.site-header-list {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+.site-header-link {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+/* CONTAINER CSS START  */
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.textBox-heading {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    font-variant: small-caps;
+}
+
+.textBox-heading span {
+    font-size: 2em;
+}
+
+.textBox-info {
+    color: #fff;
+}
+
+.textBox-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.imgBox {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    padding-top: 100px;
+    justify-content: flex-end;
+}
+
+.pepsi {
+    display: flex;
+    min-width: 260px;
+    object-fit: contain;
+}
+
+/* THUMB CSS START  */
+.thumb-list {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    list-style-type: none;
+}
+
+.thumb-item {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.thumb-item:hover {
+    transform: translateY(-15px);
+}
+
+.thumb-img {
+    display: flex;
+    max-width: 40px;
+    object-fit: contain;
+}
+
+/* SOCIALS CSS START  */
+.socials-list {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.socials-item-link {
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+.socials-img {
+    display: flex;
 }
