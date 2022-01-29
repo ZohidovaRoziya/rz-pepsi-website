@@ -157,7 +157,7 @@ header {
 
 .pepsi {
     display: flex;
-    min-width: 260px;
+    max-width: 260px;
     object-fit: contain;
 }
 
@@ -210,3 +210,172 @@ header {
 .socials-img {
     display: flex;
 }
+
+
+/* RESPONSIVE MEDI SCC START  */
+@media only screen and (max-width: 991px){
+     section {
+         padding: 40px;
+         padding-top: 450px;
+         padding-bottom: 520px;
+     }
+
+     header {
+         padding: 20px 40px;
+     }
+
+    .site-logo-img{
+         position: relative;
+         max-width: 60px;
+     }
+
+    .site-header-list {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color:#fff;
+         z-index: 1;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         transition: 0.2s ease;
+         visibility: hidden;
+         opacity: 0;
+     }
+
+     .site-header-list.active {
+         visibility: visible;
+         opacity: 1;
+     }
+
+     .site-header-link {
+         display: inline-block;
+         color: #111;
+         font-weight: 400;
+         margin-left: 0;
+         text-decoration: none;
+         font-size: 2em;
+         margin: 10px 0;
+         transition: 0.4s ease
+     }
+
+     .site-header-link:hover {
+         color: #ed0223;
+         background-color: #0062be;
+         color: #fff;
+         padding: 10px 20px;
+         border-radius: 40px;
+     }
+
+     .toggleMenu {
+         position: relative;
+         width: 40px;
+         height: 40px;
+         background-image: url("../images/menu.png");
+         background-position: center;
+         background-size: 30px;
+         background-repeat: no-repeat;
+         z-index: 2;
+         cursor: pointer;
+     }
+
+     .toggleMenu.active {
+        background-image: url("../images/close-icon.png");
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        filter: invert(1);
+     }
+
+     .container {
+         flex-direction: column;
+         margin-top: 80px;
+     }
+
+     .container .textBox {
+         position: relative;
+         max-width: 100%;
+         padding-right: 20px;
+     }
+
+     .textBox-heading {
+         font-size: 3em;
+     }
+
+     .textBox-link {
+         font-size: 14px;
+         padding: 8px 15px;
+     }
+
+     .container .imgBox {
+         width: 100%;
+         display: flex;
+         padding-right: 0;
+         padding-top: 50px;
+         justify-content: center;
+     }
+
+     .container .imgBox .pepsi {
+         max-width: 150px;
+     }
+
+     .thumb-img {
+         max-width: 30px;
+     }
+
+     .socials-list {
+         position: absolute;
+         top: 50%;
+         right: 0;
+         width: 50px;
+         background-color: rgba(0, 0, 0, 0.2);
+         transform: translateX(-50%);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     
+    }
+
+
+     @media only screen and (max-width: 767px)  {
+        section {
+            padding: 50px;
+            padding-top: 550px;
+            padding-bottom: 600px;
+        }
+
+        .site-header-link {
+            display: inline-block;
+            color: #111;
+            font-weight: 400;
+            margin-left: 0;
+            text-decoration: none;
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        
+        .container {
+            flex-direction: column;
+            margin-top: 100px;
+            text-align: center;
+        }
+        
+        .textBox-heading {
+            font-size: 2em;
+        }
+        
+        .textBox-link {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+        
+        
+        .container .imgBox .pepsi {
+            max-width: 120px;
+        }
+        
+}
+
